@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Información | Code15</title>
+  <link rel="stylesheet" href="../static/css/about.css" />
+  <link rel="icon" href="../static/images/logo.svg">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="../static/images/code15-logo.png" alt="code15"></div>
+      <ul class="links">
+        <li><a href="home">Inicio</a></li>
+        <li><a href="services">Servicios</a></li>
+        <!-- <li><a href="contact">Contact</a></li> -->
+        <li><a href="about">Información</a></li>
+      </ul>
+      <a href="contact" class="action_btn">Contacto</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="home">Inicio</a></li>
+      <li><a href="services">Servicios</a></li>
+      <!-- <li><a href="contact">Contact</a></li> -->
+      <li><a href="about">Información</a></li>
+      <li><a href="contact" class="action_btn">Contacto</a></li>
+    </div>
+  </header>
+  <main>
+    <section id="firstSection">
+      <div class="title-box">
+        <div class="title-animation">Información</div>
+      </div>
+      <p>
+        ¡Aquí podrás encontrar todo tipo de Información relacionada con
+        nuestra empresa, calidad, herramientas que utilizamos y mucho más!<br><br>
+      </p>
+      <p>Nuestro equipo de informáticos ha estado involucrado en una amplia gama de proyectos, tanto personales como
+        profesionales, lo que nos ha brindado una sólida experiencia en diversas áreas. Estamos plenamente capacitados
+        para brindar a nuestros clientes un servicio completo, convirtiendo sus proyectos e ideas en realidades
+        exitosas.</p>
+    </section>
+    <section id="herramientasAbout">
+      <h1>Herramientas & Tecnologías</h1>
+      <p>
+        Nosotros utilizamos distintas herramientas y tecnologías para
+        construir las páginas webs más rápidas y funcionales.
+      </p>
+      <div class="row">
+        <div class="column_aws">
+          <img src="../static/images/aws-logo.png" alt="aws" style="width: 60%;">
+        </div>
+        <div class="column_nodejs">
+          <img src="../static/images/nodejs-logo.png" alt="nodejs" style="width: 60%;">
+        </div>
+        <div class="column_flask">
+          <img src="../static/images/flask-logo.png" alt="flask" style="width: 60%;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column_html">
+          <img src="../static/images/html5.png" alt="html5" style="width: 60%;">
+        </div>
+        <div class="column_css">
+          <img src="../static/images/css3.png" alt="css3" style="width: 60%;">
+        </div>
+        <div class="column_js">
+          <img src="../static/images/javascript.png" alt="javascript" style="width: 60%;">
+        </div>
+      </div>
+      <p class="aboutCapacidades">Nuestro equipo tiene la capacidad de crear sitios web desde cero utilizando código, lo
+        que nos brinda un mayor nivel de personalización, ajustes precisos y velocidad óptima. Si ya tienes una página
+        web existente, también ofrecemos servicios de actualización y mejoras para asegurarnos de que esté siempre al
+        día. Además, brindamos soporte para tus servidores y podemos implementar nuevas funciones y características en
+        tu página web para mejorar su funcionalidad y experiencia del usuario. Estamos comprometidos en ofrecerte
+        soluciones completas y profesionales para todas tus necesidades digitales.</p>
+    </section>
+    <section id="faqAbout">
+      <h1>Preguntas Frecuentes</h1>
+      <details class="fix">
+        <summary>...</summary>
+      </details>
+      <details>
+        <summary>¿Quiénes Somos?</summary>
+        <p>Somos un equipo selecto de informáticos altamente capacitados, respaldados por una sólida formación académica y una amplia experiencia en la industria. A través de una combinación de proyectos personales y profesionales, hemos demostrado nuestra habilidad para enfrentar desafíos diversos y ofrecer soluciones efectivas. Estamos comprometidos a brindar un servicio excepcional a nuestros clientes, haciendo realidad sus ideas y objetivos digitales.</p>
+      </details>
+      <details>
+        <summary>Formación y Experiencia</summary>
+        <p>Nuestro equipo cuenta con un alto nivel de educación, proveniente de las mejores universidades estadounidenses reconocidas a nivel mundial. Además, hemos acumulado una amplia experiencia a través de numerosos proyectos personales y colaboraciones independientes con diversas empresas, lo que nos ha permitido adquirir un conocimiento profundo y diversificado en el campo de la tecnología.</p>
+      </details>
+      <details>
+        <summary>Calidad y Servicio</summary>
+        <p>En nuestra empresa, nos comprometemos a ofrecer calidad en todos nuestros servicios. Además, facilitamos el contacto con nosotros a través de nuestra sección de contacto en el sitio web o mediante WhatsApp, donde garantizamos respuestas rápidas a tus mensajes. Estamos disponibles las 24 horas del día, los 7 días de la semana, para brindar soporte y servicio ininterrumpidos a nuestros clientes.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <h2>Code15 &copy;</h2>
+    <p>Code15 es una empresa de servicios tecnológicos.<br><a href="/contact">Contacto</a> - <a href="/services">Servicios</a> - <a href="/about">Información</a></p>
+  </footer>
+  <script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a loop variable
+    var i;
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "50%"; // IE10
+      elements[i].style.flex = "50%";
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/6862a89a44.js" crossorigin="anonymous"></script>
+  <script src="../static/js/dropdown.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d6d6d6;
+    background-color: #222222;
+}
+
+.signupSection {
+    justify-content: center;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.signupForm {
+    margin-top: 25px;
+    font-size: 19px;
+}
+
+.signupForm input {
+    border-radius: 8px;
+    background-color: transparent;
+    border-color: #d6d6d6;
+}
+
+
+.loginSection {
+    margin-top: 45px;
+    justify-content: center;
+    text-align: center;
+}
+
+.loginSection a {
+    text-decoration: none;
+    color: rgb(170, 98, 211);
+}

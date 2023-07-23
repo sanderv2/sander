@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #d6d6d6;
+}
+
+body {
+  background-color: #222222;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+}
+
+/* 
+    Nav
+*/
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(170, 98, 211);
+}
+
+/* 
+    Header
+*/
+
+header {
+  background-image: url(../images/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  background-color: #222222;
+  width: 100%;
+  height: 80px;
+  max-width: 1200px;
+  padding-top: 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent !important;
+}
+
+.navbar .logo img {
+  width: 250px;
+  height: auto;
+}
+
+
+.navbar .links {
+  font-size: 1.1rem;
+  display: flex;
+  gap: 2rem;
+  margin-right: 150px;
+}
+
+.navbar .toggle_btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: rgb(170, 98, 211) !important;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+  color: #d6d6d6;
+  scale: 1.05;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+/* 
+    DROPDOWN MENU
+*/
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(70, 69, 69, 0.89);
+  backdrop-filter: blur(50px);
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 200px;
+  margin-top: 10px;
+}
+
+.dropdown_menu li {
+  background-color: transparent;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu li a {
+  background-color: transparent;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+    Website Body
+*/
+
+
+section#Welcome {
+  margin-top: 15px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title-box {
+  margin-bottom: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.title-animation {
+  width: 8.4ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 3rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+#Welcome p {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+section#Web {
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 25px;
+  padding: auto;
+}
+
+#Web h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#Web p {
+  margin-bottom: 0.5rem;
+}
+
+.website_info {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  column-gap: 5px;
+}
+
+section#Tech {
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-right: 25px;
+  padding: auto;
+}
+
+#Tech h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#Tech p {
+  margin-bottom: 0.5rem;
+}
+
+.tech_info {
+  display: grid;
+  grid-gap: 5px;
+  grid-auto-flow: column;
+  width: 100%;
+  grid-template-columns: 0.5fr;
+  justify-content: end;
+}
+
+section#Info_contact {
+  text-align: center;
+}
+
+#Info_contact h2 {
+  font-size: 1.3rem;
+  margin: 1.3rem;
+}
+
+#Info_contact a {
+  color: rgb(170, 98, 211);
+}
+
+#Info_contact a:hover {
+  color: rgba(169, 98, 211, 0.808);
+}
+
+input[type="submit"] {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(170, 98, 211);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(169, 98, 211, 0.808);
+}
+
+section#Info_contact {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  position: unset;
+  left: 0;
+  bottom: 0;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  width: 100%;
+  background-color: #131313;
+  text-align: center;
+}
+
+footer p {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+footer a {
+  color: rgb(170, 98, 211);
+}
+
+footer a:hover {
+  color: rgba(169, 98, 211, 0.808);
+}
+
+
+/*
+    RESPONSIVE DESIGN
+*/
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+  #firstSection p {
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #secondSection p {
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="submit"] {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .form {
+    width: 50%;
+    margin: auto;
+    height: auto;
+  }
+
+  .home_btn {
+    font-size: 15px;
+    height: 45px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+  .title-animation {
+    width: 9ch;
+  }
+  section#Web {
+    text-align: center;
+    margin-left: 0;
+    margin: 25px;
+  }
+  .website_info {
+    display: block;
+  }
+  section#Tech {
+    text-align: center;
+    margin-right: 0;
+    margin-top: 2.8rem !important;
+    margin: 25px;
+  }
+  .tech_info {
+    display: block;
+  }
+  #Info_contact h2 {
+    font-size: 1.1rem;
+    margin: 1.3rem;
+  }
+  footer {
+    position: static;
+  } 
+}

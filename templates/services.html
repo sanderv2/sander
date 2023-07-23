@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | Code15</title>
+    <link rel="stylesheet" href="../static/css/services.css" />
+    <link rel="icon" href="../static/images/logo.svg">
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><img src="../static/images/code15-logo.png" alt="code15"></div>
+        <ul class="links">
+          <li><a href="home">Inicio</a></li>
+          <li><a href="services">Servicios</a></li>
+          <!-- <li><a href="contact">Contact</a></li> -->
+          <li><a href="about">Información</a></li>
+        </ul>
+        <a href="contact" class="action_btn">Contacto</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="home">Inicio</a></li>
+        <li><a href="services">Servicios</a></li>
+        <!-- <li><a href="contact">Contact</a></li> -->
+        <li><a href="about">Información</a></li>
+        <li><a href="contact" id="action" class="action_btn">Contacto</a></li>
+      </div>
+    </header>
+    <main>
+      <section id="firstSection">
+        <div class="title-box">
+          <div class="title-animation">Servicios</div>
+        </div>
+        <p>
+          Nuestra empresa ofrece dos servicios principales: <em>construcción de sitios web y servicios técnicos.</em> <br><br>En cuanto a la construcción de sitios web, desarrollamos páginas web a medida, adaptadas a las necesidades y objetivos de cada cliente.<br>Creamos sitios web atractivos, funcionales, fáciles de actualizar y mantener, además de estar optimizados para mejorar la experiencia del usuario.<br><br>Además, ofrecemos servicios técnicos para garantizar el buen funcionamiento y mantenimiento continuo de los sitios web, ya sea que las hayamos creado nosotros o no. Esto incluye actualizaciones, seguridad, solución de problemas y soporte técnico para asegurar que los sitios web estén siempre en óptimas condiciones.
+        </p>
+      </section>
+      <section id="techandwebServices">
+        <details class="fix">
+          <summary>...</summary>
+        </details>
+        <details>
+          <summary>Websites</summary>
+          <p>Desarrollamos páginas web personalizadas al gusto del cliente por solo 250 dólares. Trabajamos estrechamente contigo para crear un diseño exclusivo que refleje tu marca y necesidades. Obtén un sitio web de alta calidad y funcionalidad a un precio asequible.<br><br>Además, ofrecemos el servicio de darle hosting y mantenimiento a tu página web por 15 dólares al mes.</p>
+          <form method="post" action="/services">
+            <input class="services_btn" type="submit" value="¡Contáctanos!">
+          </form>
+        </details>
+        <details>
+          <summary>Tech Support</summary>
+          <p>Damos soporte tecnico a tus computadoras o servidores.<br><br>Ya sea que necesites solucionar problemas con tu equipo, optimizar el rendimiento de tus servidores o asegurarte de que tu sitio web esté funcionando sin problemas. ¡Nosotros estamos para ayudar!</p>
+          <form method="post" action="/services">
+            <input style="margin-bottom: 5rem;" class="services_btn" type="submit" value="¡Contáctanos!">
+          </form>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <h2>Code15 &copy;</h2>
+      <p>Code15 es una empresa de servicios tecnológicos.<br><a href="/contact">Contacto</a> - <a href="/services">Servicios</a> - <a href="/about">Información</a></p>
+    </footer>
+    <script src="https://kit.fontawesome.com/6862a89a44.js" crossorigin="anonymous"></script>
+    <script src="../static/js/dropdown.js"></script>
+    <script src="../static/js/expand_info.js"></script>
+  </body>
+</html>

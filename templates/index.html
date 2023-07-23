@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Code15</title>
+    <link rel="icon" href="../static/images/logo.svg">
+    <link rel="stylesheet" href="../static/css/index.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="../static/images/code15-logo.png" alt="code15"></div>
+            <ul class="links">
+                <li><a href="home">Inicio</a></li>
+                <li><a href="services">Servicios</a></li>
+                <!-- <li><a href="contact">Contact</a></li> -->
+                <li><a href="about">Información</a></li>
+            </ul>
+            <a href=contact class="action_btn">Contact</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="home">Inicio</a></li>
+            <li><a href="services">Servicios</a></li>
+            <!-- <li><a href="contact">Contact</a></li> -->
+            <li><a href="about">Información</a></li>
+            <li><a href="contact" class="action_btn">Contacto</a></li>
+        </div>
+    </header>
+    <main>
+        <section id="Welcome">
+            <div class="title-box">
+                <div class="title-animation">Bienvenido</div>
+            </div>
+            <p>En nuestra empresa, nos enorgullece ofrecer servicios de alta calidad a precios asequibles. Sabemos lo importante que es para ti tener una presencia en línea efectiva y exitosa, y queremos hacerlo posible sin comprometer tu presupuesto.</p>
+            
+            
+        </section>
+        <section id="Web">
+            <h2>Websites</h2>
+            <div class="website_info">
+                <p>A diferencia de otras empresas, nos destacamos por brindar soluciones asequibles sin sacrificar la calidad. Nuestros sitios web son diseñados y desarrollados por profesionales con amplia experiencia en el campo, garantizando un resultado excepcional que superará tus expectativas. Sabemos que el mundo digital evoluciona rápidamente, por eso nos mantenemos actualizados con las últimas tendencias y tecnologías. Nuestro equipo altamente capacitado está constantemente adquiriendo nuevos conocimientos para ofrecerte soluciones innovadoras y eficientes.</p>
+            </div>
+            <form method="post" action="/home">
+                <input class="home_btn" type="submit" value="Websites">
+            </form>
+        </section>
+        <section id="Tech">
+            <h2>Tech</h2>
+            <div class="tech_info">
+                <p>Además, nos dedicamos a brindar soluciones integrales para garantizar el óptimo funcionamiento de tus dispositivos y sistemas. Desde la resolución de problemas en computadoras y servidores hasta el mantenimiento y actualización de sitios web, estamos aquí para ofrecerte un soporte confiable y eficiente.</p>
+            </div>
+            <form method="post" action="/home">
+                <input class="home_btn" type="submit" value="Servicios Tecnicos">
+            </form>
+        </section>
+        <section id="Info_contact">
+            <h2>No importa el tamaño de tu proyecto, te brindamos un servicio personalizado y orientado a resultados. Trabajamos en estrecha colaboración contigo para comprender tus requerimientos y traducirlos en un sitio web funcional, atractivo y de calidad.</h2>
+            <h2>¡No dude en <a href="/contact">contactarnos</a> para comenzar a discutir su proyecto!</h2>
+        </section>
+    </main>
+    <footer>
+        <h2>Code15 &copy;</h2>
+        <p>Code15 es una empresa de servicios tecnológicos.<br><a href="/contact">Contacto</a> - <a href="/services">Servicios</a> - <a href="/about">Información</a></p>
+    </footer>
+    <script src="https://kit.fontawesome.com/6862a89a44.js" crossorigin="anonymous"></script>
+    <script src="../static/js/dropdown.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Code15</title>
+    <link rel="stylesheet" href="../static/css/contact.css" />
+    <link rel="icon" href="../static/images/logo.svg">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="../static/images/code15-logo.png" alt="code15"></div>
+            <ul class="links">
+                <li><a href="home">Inicio</a></li>
+                <li><a href="services">Servicios</a></li>
+                <!-- <li><a href="contact">Contact</a></li> -->
+                <li><a href="about">Información</a></li>
+            </ul>
+            <a href=contact class="action_btn">Contacto</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="home">Inicio</a></li>
+            <li><a href="services">Servicios</a></li>
+            <!-- <li><a href="contact">Contact</a></li> -->
+            <li><a href="about">Información</a></li>
+            <li><a href="contact" class="action_btn">Contacto</a></li>
+        </div>
+    </header>
+    <main>
+        <!-- <section id="firstSection">
+            <h1>Contact</h1>
+            <p>Email: <br></p>
+            <p><br>Phone: </p>
+        </section> -->
+        <section id="firstSection">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <form class="contactForm" action="{{ url_for("contact")}}" method="post">
+                            <label for="fname">Nombre</label>
+                            <input type="text" id="fname" name="firstName" placeholder="Tu nombre">
+                            <label for="lname">Apellidos</label>
+                            <input type="text" id="lname" name="lastName" placeholder="Tu apellido">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="example@email.com">
+                            <label for="subject">Tema</label>
+                            <textarea id="subject" name="subject" placeholder="..."
+                                style="height:170px"></textarea>
+                            <input class="submit_btn" type="submit" value="Enviar">
+                        </form>
+                        <div class="contactWhatsapp">
+                            <h3>¡También nos puedes contactar por medio de WhatsApp!</h3>
+                            <a href="https://wa.me/50661552853"><button class="buttonWhatsapp">WhatsApp</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/6862a89a44.js" crossorigin="anonymous"></script>
+    <script src="../static/js/dropdown.js"></script>
+</body>
+
+</html>
